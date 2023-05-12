@@ -3,7 +3,7 @@
   margin: 10rem 50%;
   transform: translate(-50%);
 
-  z-index: 101;
+  z-index: 1001;
 }
 
 .backdrop {
@@ -16,7 +16,7 @@
 
   left: 0;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .close-btn,
