@@ -1,0 +1,152 @@
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10rem 15%;
+}
+
+.sneaker-info-container {
+  padding: 5rem;
+}
+
+.small-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: hsl(26, 100%, 55%);
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 4.2rem;
+  margin-bottom: 3rem;
+}
+
+.description {
+  font-size: 1.6rem;
+  color: hsl(219, 9%, 45%);
+  margin-bottom: 3rem;
+}
+
+.price-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.percentage {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(26, 100%, 55%);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: hsl(25, 100%, 94%);
+}
+
+.old-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(219, 9%, 45%);
+  margin-bottom: 3rem;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.left-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(223, 64%, 98%);
+  width: 40%;
+}
+
+.cart-btn {
+  width: 60%;
+  background-color: hsl(26, 100%, 55%);
+  color: #fff;
+  cursor: pointer;
+  padding: 1.2rem;
+}
+
+.left-button-container,
+.cart-btn {
+  border-radius: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  border: none;
+}
+
+.items-number {
+  font-size: 2rem;
+}
+
+.plus-minus-btn {
+  border: none;
+  font-size: 3rem;
+  background-color: hsl(223, 64%, 98%);
+  font-weight: 700;
+  color: hsl(26, 100%, 55%);
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.mobile-backdrop {
+  position: absolute;
+  background-color: transparent;
+  z-index: 99;
+  width: 100%;
+  height: 50rem;
+  left: 0;
+  right: 0;
+}
+
+@media (max-width: 1200px) {
+  .section {
+    margin: 5rem 5%;
+  }
+}
+
+@media (min-width: 900px) {
+  .mobile-backdrop {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .section {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .section {
+    margin: 0;
+  }
+  .sneaker-info-container {
+    padding: 2rem;
+  }
+
+  .buttons-container {
+    flex-direction: column;
+  }
+
+  .cart-btn {
+    width: 100%;
+  }
+
+  .left-button-container {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+}

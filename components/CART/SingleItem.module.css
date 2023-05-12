@@ -1,0 +1,35 @@
+.single-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+}
+
+.item-info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-name,
+.item-price {
+  font-size: 1.8rem;
+  color: hsl(219, 9%, 45%);
+}
+
+.total {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.remove-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
